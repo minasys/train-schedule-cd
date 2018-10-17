@@ -19,7 +19,7 @@ pipeline {
                         continueOnError: false,
                         publishers: [
                             sshPublisherDesc(
-                                configName: 'centos',
+                                configName: 'cicd-j',
                                 sshCredentials: [
                                     username: "$USERNAME",
                                     encryptedPassphrase: "$USERPASS"
